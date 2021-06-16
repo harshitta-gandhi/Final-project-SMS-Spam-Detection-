@@ -9,6 +9,10 @@ import nltk
 
 # download and reading the dataset
 
+import pandas
+df_sms = pd.read_csv('spam.csv',encoding='latin-1')
+df_sms.head()
+
 # Dropping the unwanted coloumns
 
 df_sms = df_sms.drop(["Unnamed: 2", "Unnamed: 3", "Unnamed: 4"], axis=1)
